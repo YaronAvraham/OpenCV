@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  OpenCV_1:
+    image: hulkinbrain/docker-opencv2
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000

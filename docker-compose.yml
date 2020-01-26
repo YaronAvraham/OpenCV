@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  OpenCV_1:
+    image: hulkinbrain/docker-opencv2
+    environment:
+        - LD_LIBRARY_PATH="/usr/local/lib"
+    build: .
+    ports:
+      - 3000:3000
