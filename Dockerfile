@@ -17,7 +17,7 @@ COPY . /opencv/build/
 
 
 ENV LD_LIBRARY_PATH="/usr/local/lib/"
-ENV TZ=Israel Standard Time
+ENV TZ=Asia/Jerusalem
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # Use GCC to compile the OpenCV_1.cpp source file
